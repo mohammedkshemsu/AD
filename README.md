@@ -1,9 +1,24 @@
-<h1>Setting Up an Active Directory Home Lab with PowerShell Automation</h1>
+# Setting Up an Active Directory Home Lab with PowerShell Automation
 
-<h2>Description</h2>
-<p>
-    This lab involves the creation of an Active Directory home environment utilizing Oracle VirtualBox. Active Directory administration is performed on Server 2019, while PowerShell automation is employed for provisioning, maintaining, and deprovisioning user accounts.
-</p>
+## Project Description
+
+In this lab, I create an Active Directory home environment using Oracle VirtualBox. I administer Active Directory on Server 2019 and employ PowerShell automation for user account provisioning, maintenance, and deprovisioning.
+
+**Image Attribution:**
+I'd like to mention that the images used to illustrate steps in this project are collected from the internet. I appreciate the creators for making them available.
+
+**Highlights:**
+- **Virtual Environment:** Oracle VirtualBox for simulating an Active Directory home setup.
+- **AD Administration:** I handle Active Directory tasks on Server 2019.
+- **PowerShell Automation:** I showcase the efficiency of PowerShell for user account processes.
+
+**Network Diagram:**
+
+![Image 1](https://imgur.com/pa8ZFFH.png)
+    
+
+
+
 
 ## Step-by-Step Project Guide:
 
