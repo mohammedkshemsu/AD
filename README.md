@@ -7,15 +7,15 @@
 
 ## Step-by-Step Project Guide:
 
-| 1. Download and Install VirtualBox               |   |  |  |
-| --------------------------------                 | ---------------------- | ---------------------------------- |---------------------- |
-| 1.1  ![Image 1](https://i.imgur.com/SBPXYNb.png) |  |  |
-| 2. Download Windows ISOs                         |  |  |
-| 2.1 ![Image 1](https://i.imgur.com/cEGicx0.png)  |   |  |
-| 2.2 ![Image 2](https://i.imgur.com/GP5aeep.png)  |   |  |  
-| 3. Create Server 2019 Virtual Machine            |   |  | 
-| 3.1 ![Image 1](https://i.imgur.com/uQKJpKA.png)  |   |  | 
-| 3.2 ![Image 2](https://i.imgur.com/ZVppEHJ.png)  |   |  | 
+| 1. Download and Install VirtualBox               | 5. Setup Server Network Adapters                   |  |  |
+| -------------------------------------------------| ----------------------------------------------- | ---------------------------------- |---------------------- |
+| 1.1  ![Image 1](https://i.imgur.com/SBPXYNb.png) | 5.1 ![Image 1](https://i.imgur.com/lBYrFN0.png) |  |
+| 2. Download Windows ISOs                         | 5.2 ![Image 2](https://i.imgur.com/JqTzulO.png) |  |
+| 2.1 ![Image 1](https://i.imgur.com/cEGicx0.png)  | 6. Assign IP address to internal adapter        |  |
+| 2.2 ![Image 2](https://i.imgur.com/GP5aeep.png)  | 6.1 ![Image 1](https://i.imgur.com/DUUiQum.png) |  |  
+| 3. Create Server 2019 Virtual Machine            | 7. Rename Server to "DC"                        |  | 
+| 3.1 ![Image 1](https://i.imgur.com/uQKJpKA.png)  | 7.1 ![Image1](https://i.imgur.com/FXmqNYs.png)  |  | 
+| 3.2 ![Image 2](https://i.imgur.com/ZVppEHJ.png)  | 7.2 ![Image2](https://i.imgur.com/hN6YrUk.png)  |  | 
 | 3.3 ![Image 3](https://i.imgur.com/o5Co8WA.png)  |   |  |
 | 3.4 ![Image 4](https://i.imgur.com/vq0AjEy.png)  |   |  |
 | 3.5 ![Image 5](https://i.imgur.com/lmSpDkU.png)  |   |  |
