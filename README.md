@@ -1,18 +1,114 @@
-# Setting Up an Active Directory Home Lab with PowerShell Automation
+# Active Directory Lab Environment Setup with PowerShell User Creation
 
-## Project Description
+## Overview
 
-In this lab, I create an Active Directory home environment using Oracle VirtualBox. I administer Active Directory on Server 2019 and employ PowerShell automation for user account provisioning, maintenance, and deprovisioning.
+This project guides users through setting up a virtual lab environment using VirtualBox, creating a domain controller with Active Directory, and automating user creation through PowerShell. The culmination involves joining a Windows 10 virtual machine to the domain, offering a hands-on experience in a controlled environment.
 
-**Image Attribution:**
+## Key Features
+
+1. **Virtualized Environment:** Utilize VirtualBox to create an isolated lab environment for testing and learning.
+
+2. **Active Directory Configuration:** Set up a Windows Server with Active Directory Domain Services (AD DS) to establish a domain controller.
+
+3. **DHCP Configuration:** Configure a DHCP server to dynamically assign IP addresses within the network.
+
+4. **PowerShell User Creation:** Employ PowerShell scripts to efficiently create a multitude of users within Active Directory.
+
+5. **Windows 10 Integration:** Join a Windows 10 virtual machine to the domain, showcasing real-world domain integration scenarios.
+
+6. **Network Connectivity:** Verify network settings, internet connectivity, and domain join functionality.
+
+## Step-by-Step Guide
+
+### Step 1: Prepare Your Environment
+
+1. **Download and Install VirtualBox:**
+   - Download and install VirtualBox for creating a virtualized environment.
+
+2. **Download Windows 10 ISO:**
+   - Download the Windows 10 ISO file from the official Microsoft website.
+
+3. **Set Up VirtualBox Network:**
+   - Configure your VirtualBox network settings to ensure proper communication between virtual machines.
+
+### Step 2: Set Up the Domain Controller
+
+4. **Install Windows Server:**
+   - Use VirtualBox to create a new virtual machine for Windows Server.
+   - Install Windows Server on the virtual machine.
+
+5. **Configure Active Directory:**
+   - Install the Active Directory Domain Services (AD DS) role.
+   - Promote the server to a domain controller.
+
+6. **Configure DHCP:**
+   - Install DHCP role on the domain controller.
+   - Configure a DHCP scope to provide IP addresses to clients.
+
+### Step 3: Create PowerShell Script for User Creation
+
+7. **Download User Creation Script:**
+   - Find and download the PowerShell script for creating users. (Refer to the provided script.)
+
+8. **Modify Names File:**
+   - Open the "names.txt" file and add your name at the top.
+   - Save and close the file.
+
+9. **Run PowerShell Script:**
+   - Open PowerShell as an administrator.
+   - Navigate to the script directory.
+   - Set the execution policy to unrestricted: `Set-ExecutionPolicy Unrestricted -Force`
+   - Run the user creation script.
+
+### Step 4: Configure Windows 10 Virtual Machine in VirtualBox
+
+10. **Create Virtual Machine in VirtualBox:**
+    - Open VirtualBox and create a new virtual machine for Windows 10.
+    - Use the downloaded Windows 10 ISO as the installation media.
+
+11. **Configure Networking:**
+    - Set the network adapter to "Internal Network" to connect to the internal network created in VirtualBox.
+
+12. **Install Windows 10:**
+    - Start the Windows 10 virtual machine and install the operating system.
+    - Skip product key and choose Windows 10 Pro edition.
+
+13. **Set Up Windows 10:**
+    - Create a local user during the Windows 10 setup process.
+    - Ensure you don't create a Microsoft account during the setup.
+
+### Step 5: Join Windows 10 to the Domain
+
+14. **Change Computer Name:**
+    - Open advanced system settings and rename the computer to "Client1."
+
+15. **Join the Domain:**
+    - Join the Windows 10 machine to the domain (mydomain.com).
+    - Use credentials of a user with permission to join machines to the domain.
+
+16. **Verify Domain Join:**
+    - Check Active Directory Users and Computers to confirm the presence of the joined machine.
+
+### Step 6: Verify Connectivity and User Login
+
+17. **Verify Network Configuration:**
+    - Open Command Prompt on Windows 10 and run `ipconfig`.
+    - Ensure the system has the correct IP configuration with the domain controller as the default gateway.
+
+18. **Test Internet Connectivity:**
+    - Open a web browser and ensure internet access is working.
+
+19. **Login with Domain Account:**
+    - Log in to Windows 10 using the domain account created during user creation.
+
+20. **Verify Active Directory Attributes:**
+    - Open Command Prompt and run `whoami` to verify membership in the domain.
+
+## Image Attribution
+
 I'd like to mention that the images used to illustrate steps in this project are collected from the internet. I appreciate the creators for making them available.
 
-**Highlights:**
-- **Virtual Environment:** Oracle VirtualBox for simulating an Active Directory home setup.
-- **AD Administration:** I handle Active Directory tasks on Server 2019.
-- **PowerShell Automation:** I showcase the efficiency of PowerShell for user account processes.
-
-**Network Diagram:**
+## Network Diagram
 
 ![Image 1](https://imgur.com/pa8ZFFH.png)
     
